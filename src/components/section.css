@@ -1,0 +1,85 @@
+.section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.image .bottle{
+    height: 600px;
+}
+
+.image .cap{
+    position: absolute;
+    height: 80px;
+    top: 6.5%;
+}
+
+.text{
+    width: 50%;
+    background: linear-gradient(rgba(2, 132, 248, 0.69), rgba(19, 57, 91, 1));
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.text h2{
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 3.5rem;
+    padding-left: 4rem;
+    padding: 2rem 1rem 4rem 4rem;
+}
+
+.text h4{
+    font-size: 36px;
+    margin: 0;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding: 0 1rem 2.5rem 4rem;
+}
+
+.text p{
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding: 0 1rem 4rem 4rem;
+}
+
+
+@media only screen and (max-width: 1050px){
+    .text h2{
+        font-size: 40px
+    }
+    .text h4{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+   .section{
+       width: 100%;
+       flex-direction: column;
+   }
+   .image{
+       width: 100%;
+   }
+   .text{
+       width: 100%;
+   }
+}
